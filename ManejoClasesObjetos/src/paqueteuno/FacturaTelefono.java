@@ -14,6 +14,7 @@ public class FacturaTelefono {
     private double minutosMes;
     private double valorMinuto;
     private double valorFactura;
+    private String nombresCompletos;
     
     public void establecerNumeroTelefono(String c){
         numeroTelefono = c;
@@ -48,6 +49,10 @@ public class FacturaTelefono {
         return valorFactura;
     }
     
-    
-    
+    public void establecerNombresCompletos( String c){
+         nombresCompletos = c;
+    }
+    public String obtnerNombresCompletos(){
+        return nombresCompletos;
+    }
 }

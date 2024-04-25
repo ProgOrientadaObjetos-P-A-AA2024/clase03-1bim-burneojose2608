@@ -14,6 +14,7 @@ public class Ejecutor {
         // Crear un objeto de tipo FacturaTelefono
         FacturaTelefono ft = new FacturaTelefono();
         // Valores de entrada
+        String nombresCompletos = "Rene Elizalde";
         String numeroTelefono = "098321321";
         double minutos = 230;
         double valorMinuto = 0.25;
@@ -22,6 +23,7 @@ public class Ejecutor {
         ft.establecerNumeroTelefono(numeroTelefono);
         ft.establecerMinutosMes(minutos);
         ft.establecerValorMinuto(valorMinuto);
+       ft.establecerNombresCompletos(nombresCompletos);
         // hasta aquí el objeto ya tiene valores para sus atributos:
         // número de telefono, número de minutos consumidos en el mes, 
         // valor de cada minuto.
@@ -34,9 +36,9 @@ public class Ejecutor {
         
         // Se hace uso de los métodos obtener para presentar en pantalla lo 
         // requerido
-        System.out.printf("Factura de Teléfono\n\nNúmero de teléfono: %s\n"
+        System.out.printf("Factura de Teléfono\n  %s Nombre y apellidos: \n \nNúmero de teléfono: %s\n"
                 + "Minutos mensuales: %.2f\nValor por minuto: %.2f\n"
-                + "Valor a cancelar: %.2f\n", ft.obtenerNumeroTelefono(),
+                + "Valor a cancelar: %.2f\n",ft.obtnerNombresCompletos(), ft.obtenerNumeroTelefono(),
                 ft.obtenerMinutosMes(), ft.obtenerValorMinuto(),
                 ft.obtenerValorFactura());
     }
